@@ -24,11 +24,12 @@ public class Company extends AbstractEntity {
         this.name = name;
     }
 
+    @Nullable
     public List<Contact> getEmployees() {
         return employees;
     }
 
-    public void setEmployees(List<Contact> employees) {
+    public void setEmployees(@Nullable List<Contact> employees) {
         this.employees = employees;
     }
 }
